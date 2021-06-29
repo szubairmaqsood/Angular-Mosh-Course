@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CoursesService } from './courses.service';
 
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
@@ -14,7 +15,7 @@ import { CourseComponent } from './course/course.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CoursesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
